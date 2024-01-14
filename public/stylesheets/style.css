@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+textarea{
+  border-radius: 10px;
+  resize: none;
+  padding: 10px;
+}
+button {
+    background: dodgerblue;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

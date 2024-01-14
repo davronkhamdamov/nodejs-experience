@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Experience</title>
+</head>
+<body>
+
+    <% const lastPath = data[0].real_path.split("\\").slice(0,-2).join("\\") %>
+    <% if(lastPath === "C:") { %>
+    <% } else{ %>
+        <a href="?path=<%= lastPath  %>">..</a>
+    <% } %>
+    <br>
+    <% for(let i = 0; i < data.length; i++) {%>
+        <a href="?path=<%= data[i].real_path %>"> <%= data[i].path %> </a> <br>
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <br>
+    <br>
+    <br>
+    <form action="/code" method="post">
+      <label>
+        Your code
+        <br>
+        <br>
+        <textarea cols="30" rows="10" placeholder="Your code here..." name="code" ></textarea>
+        <br>
+        <br>
+        <button type="submit">Submit your code</button>
+      </label>
+    </form>
+  </body>
+</html>
